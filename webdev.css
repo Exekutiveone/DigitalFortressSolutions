@@ -1,0 +1,37 @@
+.bento-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.bento-box {
+  background-color: #222;
+  padding: 30px;
+  border-radius: 15px;
+  width: 45%; /* Jede Box nimmt 45% des Bildschirms ein */
+  text-align: center;
+  transition: transform 0.3s ease-in-out, background-color 0.3s, border 0.3s;
+  color: #fff;
+}
+
+.bento-box:hover {
+  transform: scale(1.05);
+  background-color: #333;
+  border: 2px solid #008080;
+}
+
+.bento-box h2 {
+  font-size: 2rem;
+  color: #40e0d0;
+  margin-bottom: 20px;
+}
+
+.bento-box p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+
+  
