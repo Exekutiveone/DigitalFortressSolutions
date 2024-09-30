@@ -1,228 +1,403 @@
-/* cybersec.css */
-
-/* General Styles */
+/* Allgemeine Stile */
 body {
-    background-color: #111;
-    color: #fff;
-    font-family: 'Arial', sans-serif;
+  background-color: #111;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #000;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 2rem;
+  color: #008080;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav ul li {
+  margin: 0 15px;
+}
+
+.navbar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+  color: #40e0d0;
+}
+
+/* Einführung */
+.intro {
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url('images/cybersec-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  color: #40e0d0;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Bento-Grid (falls vorhanden) */
+.bento-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.bento-box {
+  background-color: #222;
+  padding: 40px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.bento-box:hover {
+  transform: scale(1.05);
+  background-color: #333;
+}
+
+.bento-box h2 {
+  color: #40e0d0;
+  margin-top: 20px;
+}
+
+.bento-box p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.fab, .fas {
+  color: #40e0d0;
+}
+
+/* Dienstleistungen */
+.services-section {
+  padding: 60px 20px;
+  background-color: #000;
+}
+
+.services-section h2 {
+  font-size: 2.5rem;
+  color: #008080;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.service {
+  margin-bottom: 40px;
+}
+
+.service h3 {
+  font-size: 1.8rem;
+  color: #40e0d0;
+  margin-bottom: 20px;
+}
+
+.service p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.service ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.service ul li {
+  margin-bottom: 5px;
+}
+
+/* Key Selling Points */
+.key-points {
+  padding: 60px 20px;
+  background-color: #111;
+}
+
+.key-points h2 {
+  font-size: 2.5rem;
+  color: #008080;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.key-point {
+  margin-bottom: 40px;
+}
+
+.key-point h3 {
+  font-size: 1.8rem;
+  color: #40e0d0;
+  margin-bottom: 20px;
+}
+
+.key-point p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.key-point ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.key-point ul li {
+  margin-bottom: 5px;
+}
+
+.key-point blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #ccc;
+  border-left: 4px solid #40e0d0;
+  padding-left: 15px;
+  margin-top: 20px;
+}
+
+/* Fallstudien */
+.case-studies {
+  padding: 60px 20px;
+  background-color: #000;
+}
+
+.case-studies h2 {
+  font-size: 2.5rem;
+  color: #008080;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.case-study {
+  margin-bottom: 40px;
+}
+
+.case-study h3 {
+  font-size: 1.8rem;
+  color: #40e0d0;
+  margin-bottom: 15px;
+}
+
+.case-study p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 60px 20px;
+  background-color: #111;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  color: #008080;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonial-item {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.testimonial-item blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #ccc;
+  border-left: 4px solid #40e0d0;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.testimonial-item p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Kontaktbereich */
+.contact {
+  background-color: #000;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: #40e0d0;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #222;
+  border: 1px solid #555;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  border-color: #40e0d0;
+  outline: none;
+}
+
+.contact form button {
+  padding: 15px 30px;
+  background-color: #008080;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.contact form button:hover {
+  background-color: #40e0d0;
+}
+
+.contact-details {
+  font-size: 1.2rem;
+}
+
+.contact-details p {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #40e0d0;
+}
+
+.social-media a {
+  margin: 0 10px;
+  display: inline-block;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #40e0d0;
+}
+
+/* Responsives Design */
+@media (max-width: 768px) {
+  .navbar nav ul {
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    display: none;
     margin: 0;
     padding: 0;
   }
-  
-  /* Navigation */
-  .navbar {
-    background-color: #000;
-    padding: 20px 40px;
+
+  .navbar nav.active {
     display: flex;
-    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    display: block;
+  }
+
+  .bento-grid,
+  .services-section .bento-grid,
+  .project-list,
+  .service,
+  .key-point,
+  .case-study {
+    flex-direction: column;
     align-items: center;
   }
-  
-  .navbar .logo {
-    font-size: 2rem;
-    color: #008080;
+
+  .bento-box,
+  .project-item {
+    width: 90%;
   }
-  
-  .navbar nav ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  .navbar nav ul li {
-    margin: 0 15px;
-  }
-  
-  .navbar nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .navbar nav ul li a:hover {
-    color: #40e0d0;
-  }
-  
-  /* Introduction */
-  .intro {
-    text-align: center;
-    padding: 100px 20px;
-  }
-  
-  .intro h1 {
-    font-size: 3rem;
-    color: #008080;
-    margin-bottom: 20px;
-  }
-  
-  .intro p {
-    font-size: 1.5rem;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  /* Bento Grid */
-  .bento-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    padding: 60px 20px;
-  }
-  
-  .bento-box {
-    background-color: #222;
-    padding: 40px;
-    border-radius: 15px;
-    width: 300px;
-    text-align: center;
-    transition: transform 0.3s, background-color 0.3s;
-  }
-  
-  .bento-box:hover {
-    transform: scale(1.05);
-    background-color: #333;
-  }
-  
-  .bento-box h2 {
-    color: #40e0d0;
-    margin-top: 20px;
-  }
-  
-  .bento-box p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-  }
-  
-  .bento-box i {
-    color: #40e0d0;
-  }
-  
-  /* Contact Section */
-  .contact {
-    background-color: #000;
-    padding: 80px 20px;
-    text-align: center;
-  }
-  
-  .contact h2 {
-    font-size: 2.5rem;
-    color: #40e0d0;
-    margin-bottom: 20px;
-  }
-  
-  .contact p {
-    font-size: 1.4rem;
-    margin-bottom: 40px;
-  }
-  
-  .contact form {
-    max-width: 600px;
-    margin: 0 auto 40px;
-  }
-  
-  .contact form input,
-  .contact form textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    background-color: #222;
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 1.2rem;
-  }
-  
-  .contact form button {
-    padding: 15px 30px;
-    background-color: #008080;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s;
-  }
-  
-  .contact form button:hover {
-    background-color: #40e0d0;
-  }
-  
-  .contact-details {
-    font-size: 1.2rem;
-  }
-  
-  .contact-details p {
-    margin-bottom: 10px;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #000;
-    padding: 40px 20px;
-    text-align: center;
-    color: #fff;
-  }
-  
-  .footer-content {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .footer-links {
-    margin-bottom: 20px;
-  }
-  
+
   .footer-links a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s;
+    display: block;
+    margin: 10px 0;
   }
-  
-  .footer-links a:hover {
-    color: #40e0d0;
-  }
-  
-  .social-media a {
-    margin: 0 10px;
-    display: inline-block;
-    color: #fff;
-    transition: color 0.3s;
-  }
-  
-  .social-media a:hover {
-    color: #40e0d0;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .navbar nav ul {
-      flex-direction: column;
-      background-color: #000;
-      position: absolute;
-      top: 70px;
-      left: 0;
-      width: 100%;
-      display: none;
-    }
-  
-    .navbar nav.active {
-      display: flex;
-    }
-  
-    .bento-grid {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .bento-box {
-      width: 90%;
-    }
-  
-    .footer-links a {
-      display: block;
-      margin: 10px 0;
-    }
-  }
-  
+}

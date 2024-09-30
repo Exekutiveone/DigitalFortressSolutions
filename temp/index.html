@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Fortress Solutions</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    .navbar {
+      background-color: #111;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #333;
+    }
+
+    .navbar .logo {
+      font-size: 2rem;
+      color: #40e0d0; /* Modernes, leuchtendes Türkis */
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      display: flex;
+      list-style: none;
+    }
+
+    .navbar ul li {
+      margin: 0 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2rem;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .navbar ul li a:hover {
+      color: #40e0d0;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('hero-image.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      color: #40e0d0;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      max-width: 800px;
+      margin: 0 auto 40px;
+    }
+
+    .hero .cta-btn {
+      background-color: #40e0d0;
+      color: #000;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero .cta-btn:hover {
+      background-color: #33b9b4;
+    }
+
+    /* Dienstleistungen Sections */
+    .services {
+      padding: 100px 20px;
+      text-align: center;
+      background-color: #111;
+    }
+
+    .services h1 {
+      font-size: 2.5rem;
+      color: #40e0d0;
+      margin-bottom: 40px;
+    }
+
+    .bento-grid {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .bento-box {
+      background-color: #222;
+      padding: 30px;
+      border-radius: 15px;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s, background-color 0.3s;
+      color: #fff;
+    }
+
+    .bento-box:hover {
+      transform: scale(1.05);
+      background-color: #333;
+    }
+
+    .bento-box h2 {
+      font-size: 1.8rem;
+      color: #40e0d0;
+      margin-bottom: 15px;
+    }
+
+    .bento-box p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .bento-box .icon {
+      font-size: 3rem;
+      color: #40e0d0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 30px;
+      color: #fff;
+    }
+
+    footer p {
+      margin-top: 15px;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">Digital Fortress</div>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">Über Uns</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1>Ihre digitale Zukunft beginnt hier</h1>
+      <p>Innovative Webentwicklung und maßgeschneiderte Cyber Security Lösungen für Unternehmen jeder Größe.</p>
+      <a href="#services" class="cta-btn">Mehr erfahren</a>
+    </div>
+  </section>
+
+  <!-- Web Development and Cyber Security Sections -->
+  <section class="services" id="services">
+    <h1>Unsere Dienstleistungen</h1>
+    <div class="bento-grid">
+      <!-- Web Development -->
+      <div class="bento-box">
+        <div class="icon">💻</div>
+        <h2>Web Development</h2>
+        <p>Moderne Benutzeroberflächen und starke Backend-Systeme, die Ihre Online-Präsenz auf ein neues Niveau heben.</p>
+      </div>
+      <!-- Cyber Security -->
+      <div class="bento-box">
+        <div class="icon">🔒</div>
+        <h2>Cyber Security</h2>
+        <p>Schützen Sie Ihr Unternehmen mit unseren hochmodernen Sicherheitslösungen vor Cyber-Bedrohungen.</p>
+      </div>
+      <!-- Digitale Transformation -->
+      <div class="bento-box">
+        <div class="icon">🚀</div>
+        <h2>Digitale Transformation</h2>
+        <p>Wir unterstützen Sie dabei, den Schritt in die digitale Zukunft erfolgreich zu gestalten.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Digital Fortress Solutions</p>
+    <p>Kontakt: <a href="mailto:info@digitalfortress.com">info@digitalfortress.com</a></p>
+  </footer>
+</body>
+</html>
