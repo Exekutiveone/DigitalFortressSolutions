@@ -6,15 +6,30 @@
   <title>Frontend - Digital Fortress Solutions</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="frontend.css">
+  <!-- Font Awesome eingebunden für die Icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Header -->
   <header class="navbar">
-    <div class="logo">Frontend Development</div>
+    <div class="logo">Digital Fortress Solutions</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="webdev.html">Webentwicklung</a></li>
+        <li><a href="cybsec.html">Cyber-Sicherheit</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
   </header>
 
+  <!-- Hauptinhalt -->
   <main class="services">
-    <h1>Frontend Technologien</h1>
+    <!-- Einführung -->
+    <section class="intro">
+      <h1>Frontend Technologien</h1>
+      <p>Wir nutzen modernste Technologien, um ansprechende und interaktive Benutzeroberflächen zu entwickeln.</p>
+    </section>
 
     <!-- Bento-Boxen mit Logos -->
     <div class="bento-grid">
@@ -35,11 +50,62 @@
         <i class="fab fa-js fa-5x"></i>
         <p>Erstellt interaktive und dynamische Benutzeroberflächen.</p>
       </div>
+
+      <!-- Neue Bento-Boxen für die Angebote -->
+      <div class="bento-box">
+        <h2>Responsive Design</h2>
+        <i class="fas fa-mobile-alt fa-5x"></i>
+        <p>Optimierung für alle Geräte und Bildschirmgrößen.</p>
+      </div>
+
+      <div class="bento-box">
+        <h2>Single Page Applications</h2>
+        <i class="fas fa-file-code fa-5x"></i>
+        <p>Schnelle und effiziente Webanwendungen mit modernem Framework.</p>
+      </div>
+
+      <div class="bento-box">
+        <h2>Barrierefreiheit</h2>
+        <i class="fas fa-universal-access fa-5x"></i>
+        <p>Entwicklung zugänglicher Webseiten für alle Benutzer.</p>
+      </div>
     </div>
   </main>
 
+  <!-- Kontaktbereich -->
+  <section id="contact" class="contact">
+    <h2>Kontaktieren Sie uns</h2>
+    <p>Haben Sie ein Projekt im Sinn? Lassen Sie uns darüber sprechen.</p>
+    <form action="send_form.php" method="post">
+      <input type="text" name="name" placeholder="Ihr Name" required>
+      <input type="email" name="email" placeholder="Ihre E-Mail" required>
+      <textarea name="message" placeholder="Ihre Nachricht" required></textarea>
+      <button type="submit">Nachricht senden</button>
+    </form>
+    <div class="contact-details">
+      <p><strong>E-Mail:</strong> frontend@digitalfortress.de</p>
+      <p><strong>Telefon:</strong> +49 123 456789</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2024 Digital Fortress Solutions</p>
+    <div class="footer-content">
+      <p>© 2024 Digital Fortress Solutions</p>
+      <div class="footer-links">
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="agb.html">AGB</a>
+      </div>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+    </div>
   </footer>
+
+  <!-- Skripte -->
+  <script src="script.js"></script>
 </body>
 </html>

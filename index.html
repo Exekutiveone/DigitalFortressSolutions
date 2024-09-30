@@ -3,61 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Fortress Solutions</title>
+  <title>Digital Fortress Solutions - Webentwicklung & Cyber-Sicherheit</title>
+  <meta name="description" content="Digital Fortress Solutions bietet professionelle Webentwicklung und Cyber-Sicherheitslösungen für Ihr Unternehmen.">
+  <meta name="keywords" content="Webentwicklung, Cyber-Sicherheit, Digital Fortress Solutions, IT-Dienstleistungen, Sicherheit">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header -->
+
+  <!-- Navigation -->
   <header class="navbar">
     <div class="logo">Digital Fortress Solutions</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Startseite</a></li>
+        <li><a href="#about">Über uns</a></li>
+        <li><a href="#services">Dienstleistungen</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+        <!-- Login-Link -->
+        <li class="login-link animate-on-scroll" data-animate="fade-in"><a href="#login">Login</a></li>
+      </ul>
+    </nav>
+    <!-- Mobile Menü-Icon -->
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </header>
 
-  <!-- Main Section -->
-  <main class="intro">
-    <h1>Willkommen bei Digital Fortress Solutions</h1>
-    <p>Wählen Sie Ihren Bereich aus unseren professionellen Dienstleistungen.</p>
+  <!-- Intro Section -->
+  <main id="home" class="intro">
+    <!-- Verbesserte Glühwürmchen -->
+    <div class="glow-worm-container">
+      <!-- Anzahl und Positionen der Glühwürmchen werden per JavaScript generiert -->
+    </div>
+
+    <!-- Die beiden Reiter -->
     <div class="intro-sections">
       <a href="webdev.html" class="intro-box">
-        <h2>Web Development</h2>
-        <p>Maßgeschneiderte Webentwicklungslösungen für Ihr Unternehmen.</p>
+        <h2>Webentwicklung</h2>
+        <p>Maßgeschneiderte Lösungen für Ihre digitale Präsenz.</p>
       </a>
       <a href="cybsec.html" class="intro-box">
-        <h2>Cyber Security</h2>
-        <p>Sicherheitslösungen, um Ihr Unternehmen vor Cyber-Bedrohungen zu schützen.</p>
+        <h2>Cyber-Sicherheit</h2>
+        <p>Schützen Sie Ihr Unternehmen vor Cyber-Bedrohungen.</p>
       </a>
     </div>
   </main>
 
-  <!-- Unternehmensbeschreibung -->
-  <section class="about">
-    <h2>Über Digital Fortress Solutions</h2>
-    <p>
-      Gegründet im Jahr 2010, hat sich Digital Fortress Solutions von einem kleinen Start-up zu einem führenden Anbieter von Web- und Sicherheitslösungen entwickelt. 
-      Unsere Mission ist es, Unternehmen weltweit durch innovative digitale Lösungen und herausragende Sicherheitsstandards zu unterstützen.
+  <!-- Text, der beim Scrollen erscheint -->
+  <section class="intro-text">
+    <h1 class="animate-on-scroll" data-animate="text">Willkommen bei Digital Fortress Solutions</h1>
+    <p class="animate-on-scroll" data-animate="text">Ihr Partner für professionelle Webentwicklung und Cyber-Sicherheit.</p>
+  </section>
+
+  <!-- Über uns -->
+  <section id="about" class="about">
+    <h2 class="animate-on-scroll" data-animate="text">Über Digital Fortress Solutions</h2>
+    <p class="animate-on-scroll" data-animate="text">
+      Seit unserer Gründung im Jahr 2010 haben wir es uns zur Mission gemacht, Unternehmen weltweit durch innovative digitale Lösungen und höchste Sicherheitsstandards zu unterstützen.
     </p>
   </section>
 
-  <!-- Personenvorstellung -->
-  <section class="team">
-    <h2>Unser Team</h2>
+  <!-- Dienstleistungen -->
+  <section id="services" class="services">
+    <h2 class="animate-on-scroll" data-animate="text">Unsere Dienstleistungen</h2>
+    <div class="services-grid">
+      <div class="service-item animate-on-scroll" data-animate="fade-in-up">
+        <h3>Webentwicklung</h3>
+        <p>Entwicklung von responsiven und benutzerfreundlichen Websites.</p>
+      </div>
+      <div class="service-item animate-on-scroll" data-animate="fade-in-up" data-delay="0.1s">
+        <h3>Mobile Apps</h3>
+        <p>Erstellung von Apps für iOS und Android.</p>
+      </div>
+      <div class="service-item animate-on-scroll" data-animate="fade-in-up" data-delay="0.2s">
+        <h3>IT-Beratung</h3>
+        <p>Strategische Beratung für Ihre IT-Infrastruktur.</p>
+      </div>
+      <div class="service-item animate-on-scroll" data-animate="fade-in-up" data-delay="0.3s">
+        <h3>Cyber-Sicherheit</h3>
+        <p>Umfassende Sicherheitslösungen für Ihr Unternehmen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="team">
+    <h2 class="animate-on-scroll" data-animate="text">Unser Team</h2>
     <div class="team-grid">
-      <div class="team-member">
-        <div class="team-image">[Platzhalter Bild]</div>
+      <div class="team-member animate-on-scroll">
+        <div class="team-image">
+          <img src="WhatsApp Image 2024-09-30 at 19.49.06.jpeg" alt="Teammitglied">
+        </div>
         <h3>Max Mustermann</h3>
-        <p>Leiter Web Development</p>
+        <p>Leiter Webentwicklung</p>
       </div>
-      <div class="team-member">
-        <div class="team-image">[Platzhalter Bild]</div>
-        <h3>Anna Beispiel</h3>
-        <p>Leiterin Cyber Security</p>
+      <div class="team-member animate-on-scroll">
+        <div class="team-image">
+          <img src="WhatsApp Image 2024-09-30 at 19.49.06.jpeg" alt="Teammitglied">
+        </div>
+        <h3>Max Mustermann</h3>
+        <p>Leiter Webentwicklung</p>
       </div>
+      <!-- Weitere Teammitglieder können hier hinzugefügt werden -->
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="contact">
+    <h2 class="animate-on-scroll" data-animate="text">Kontaktieren Sie uns</h2>
+    <form action="send_form.php" method="post" class="animate-on-scroll">
+      <input type="text" name="name" placeholder="Ihr Name" required>
+      <input type="email" name="email" placeholder="Ihre E-Mail" required>
+      <textarea name="message" placeholder="Ihre Nachricht" required></textarea>
+      <button type="submit">Senden</button>
+    </form>
+    <div class="contact-info animate-on-scroll" data-animate="text">
+      <p><strong>E-Mail:</strong> info@digitalfortress.de</p>
+      <p><strong>Telefon:</strong> +49 123 456789</p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>© 2024 Digital Fortress Solutions</p>
+    <div class="social-media">
+      <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="icons/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+    </div>
   </footer>
+
+  <!-- Skripte -->
+  <script src="script.js"></script>
 </body>
 </html>
-

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Development - Digital Fortress Solutions</title>
+  <title>Webentwicklung - Digital Fortress Solutions</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="webdev.css">
 </head>
@@ -11,32 +11,161 @@
   <!-- Header -->
   <header class="navbar">
     <div class="logo">Digital Fortress Solutions</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="cybsec.html">Cyber-Sicherheit</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Main Section -->
+  <!-- Hauptbereich -->
   <main class="services">
-    <h1>Web Development Dienstleistungen</h1>
+    <!-- Einführung -->
+    <!-- Hier können Sie einen Einführungstext hinzufügen, falls gewünscht -->
 
     <!-- Bento-Grid -->
     <div class="bento-grid">
       <!-- Frontend Bento-Box -->
       <a href="frontend.html" class="bento-box">
         <h2>Frontend-Entwicklung</h2>
-        <p>Moderne Benutzeroberflächen mit HTML5, CSS und JavaScript.</p>
+        <p>Moderne Benutzeroberflächen mit HTML5, CSS3 und JavaScript.</p>
+        <div class="technologies">
+          <img src="webdevpictures\CSS.jpg" alt="CSS3">
+          <img src="webdevpictures\HTML.png" alt="HTML5">
+          <img src="webdevpictures\Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript">
+        </div>
       </a>
 
       <!-- Backend Bento-Box -->
       <a href="backend.html" class="bento-box">
         <h2>Backend-Entwicklung</h2>
         <p>Stabile Server-Lösungen mit Python, NGINX und Linux.</p>
+        <div class="technologies">
+          <img src="webdevpictures\kisspng-python-computer-icons-programming-language-executa-1713885634631.webp" alt="Python">
+          <img src="webdevpictures\png-transparent-nginx-phusion-passenger-load-balancing-docker-world-wide-web-angle-text-rectangle.png" alt="NGINX">
+          <img src="webdevpictures\png-transparent-linux-distribution-tux-free-software-linux-kernel-linux-logo-bird-linux-thumbnail.png" alt="Linux">
+          <img src="webdevpictures\Download.jpg" alt="Weitere Technologie">
+        </div>
       </a>
     </div>
+
+    <!-- Projekte-Sektion -->
+    <section class="projects">
+      <h2>Unsere Projekte</h2>
+      <div class="project-gallery">
+        <div class="project-item">
+          <h3>E-Commerce Plattform</h3>
+          <p>Entwicklung einer skalierbaren E-Commerce Plattform mit intuitivem Design.</p>
+        </div>
+        <div class="project-item">
+          <h3>Unternehmenswebsite</h3>
+          <p>Responsive Website für ein internationales Unternehmen.</p>
+        </div>
+        <div class="project-item">
+          <h3>Mobile App</h3>
+          <p>Cross-Plattform-App mit nahtloser Benutzererfahrung.</p>
+        </div>
+        <!-- Weitere Projekte können hinzugefügt werden -->
+      </div>
+    </section>
+
+
+
+    <!-- Kundenbewertungen -->
+    <section class="testimonials">
+      <h2>Was unsere Kunden sagen</h2>
+      <div class="testimonial-item">
+        <p>"Digital Fortress Solutions hat unsere Erwartungen übertroffen. Die neue Website hat zu einer Steigerung unseres Umsatzes geführt."</p>
+        <h4>- Anna Schmidt, CEO von Beispiel GmbH</h4>
+      </div>
+      <div class="testimonial-item">
+        <p>"Professionell, effizient und zuverlässig. Ich kann ihre Dienstleistungen nur empfehlen."</p>
+        <h4>- Markus Weber, IT-Leiter bei TechCorp</h4>
+      </div>
+      <!-- Weitere Testimonials können hinzugefügt werden -->
+    </section>
+
+            <!-- Neue Angebotssektion -->
+            <section class="offers">
+              <h2>Unsere Angebote</h2>
+              <div class="offers-grid">
+                <!-- Angebot 1 -->
+                <div class="offer-item">
+                  <h3>Starter-Paket</h3>
+                  <p>Ideal für kleine Unternehmen und Start-ups, die eine professionelle Online-Präsenz benötigen.</p>
+                  <ul>
+                    <li>Responsive Design</li>
+                    <li>Bis zu 5 Seiten</li>
+                    <li>Basis SEO-Optimierung</li>
+                  </ul>
+                  <a href="#contact" class="offer-button">Angebot anfragen</a>
+                </div>
+        
+                <!-- Angebot 2 -->
+                <div class="offer-item">
+                  <h3>Business-Paket</h3>
+                  <p>Für wachsende Unternehmen, die erweiterte Funktionen und maßgeschneiderte Lösungen benötigen.</p>
+                  <ul>
+                    <li>Individuelles Design</li>
+                    <li>Content-Management-System</li>
+                    <li>Erweiterte SEO-Optimierung</li>
+                  </ul>
+                  <a href="#contact" class="offer-button">Angebot anfragen</a>
+                </div>
+        
+                <!-- Angebot 3 -->
+                <div class="offer-item">
+                  <h3>Enterprise-Paket</h3>
+                  <p>Umfassende Lösungen für große Unternehmen mit speziellen Anforderungen und Integrationen.</p>
+                  <ul>
+                    <li>Komplexe Webanwendungen</li>
+                    <li>API-Integration</li>
+                    <li>Dedizierter Support</li>
+                  </ul>
+                  <a href="#contact" class="offer-button">Angebot anfragen</a>
+                </div>
+              </div>
+            </section>
+
+    <!-- Kontaktbereich -->
+    <section id="contact" class="contact">
+      <h2>Kontaktieren Sie uns</h2>
+      <p>Haben Sie ein Projekt im Sinn? Lassen Sie uns darüber sprechen.</p>
+      <form action="send_form.php" method="post">
+        <input type="text" name="name" placeholder="Ihr Name" required>
+        <input type="email" name="email" placeholder="Ihre E-Mail" required>
+        <textarea name="message" placeholder="Ihre Nachricht" required></textarea>
+        <button type="submit">Nachricht senden</button>
+      </form>
+      <div class="contact-details">
+        <p><strong>E-Mail:</strong> webdev@digitalfortress.de</p>
+        <p><strong>Telefon:</strong> +49 123 456789</p>
+      </div>
+    </section>
   </main>
 
+
+  
   <!-- Footer -->
   <footer>
-    <p>© 2024 Digital Fortress Solutions</p>
+    <div class="footer-content">
+      <p>© 2024 Digital Fortress Solutions</p>
+      <div class="footer-links">
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="agb.html">AGB</a>
+      </div>
+      <div class="social-media">
+        <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="icons/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+      </div>
+    </div>
   </footer>
+
+  <!-- Skripte -->
+  <script src="script.js"></script>
 </body>
 </html>
-

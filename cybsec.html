@@ -3,41 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cyber Security</title>
+  <title>Cyber Security - Digital Fortress Solutions</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cybersec.css">
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- Header -->
   <header class="navbar">
-    <div class="logo">Meine Firma</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Startseite</a></li>
-      <li><a href="WebDev.html">Web Development</a></li>
-    </ul>
+    <div class="logo">Digital Fortress Solutions</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="webdev.html">Webentwicklung</a></li>
+        <li><a href="cybersec.html">Cyber-Sicherheit</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Main Section -->
   <main class="services">
-    <h1>Cyber Security Dienstleistungen</h1>
+    <!-- Introduction -->
+    <section class="intro">
+      <h1>Cyber-Sicherheit Dienstleistungen</h1>
+      <p>Schützen Sie Ihr Unternehmen vor den neuesten Cyber-Bedrohungen mit unseren umfassenden Sicherheitslösungen.</p>
+    </section>
+
+    <!-- Service Offerings -->
     <div class="bento-grid">
       <div class="bento-box">
         <h2>Penetrationstests</h2>
+        <i class="fas fa-user-secret fa-5x"></i>
         <p>Identifizieren und beheben Sie Schwachstellen in Ihren Systemen.</p>
       </div>
       <div class="bento-box">
         <h2>Netzwerksicherheit</h2>
-        <p>Schützen Sie Ihre Netzwerke vor Cyberbedrohungen.</p>
+        <i class="fas fa-network-wired fa-5x"></i>
+        <p>Schützen Sie Ihre Netzwerke vor Cyber-Bedrohungen.</p>
       </div>
       <div class="bento-box">
         <h2>Datenschutz</h2>
+        <i class="fas fa-shield-alt fa-5x"></i>
         <p>Sicherstellung der Einhaltung von Datenschutzrichtlinien.</p>
+      </div>
+      <!-- Additional Services -->
+      <div class="bento-box">
+        <h2>Schulung & Awareness</h2>
+        <i class="fas fa-chalkboard-teacher fa-5x"></i>
+        <p>Schulen Sie Ihre Mitarbeiter im sicheren Umgang mit Daten.</p>
+      </div>
+      <div class="bento-box">
+        <h2>Incident Response</h2>
+        <i class="fas fa-bug fa-5x"></i>
+        <p>Schnelle Reaktion und Wiederherstellung nach Sicherheitsvorfällen.</p>
+      </div>
+      <div class="bento-box">
+        <h2>Compliance Management</h2>
+        <i class="fas fa-file-contract fa-5x"></i>
+        <p>Unterstützung bei der Einhaltung gesetzlicher Vorgaben.</p>
       </div>
     </div>
   </main>
 
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Kontaktieren Sie uns</h2>
+    <p>Haben Sie Fragen oder benötigen Sie Unterstützung? Wir sind für Sie da.</p>
+    <form action="send_form.php" method="post">
+      <input type="text" name="name" placeholder="Ihr Name" required>
+      <input type="email" name="email" placeholder="Ihre E-Mail" required>
+      <textarea name="message" placeholder="Ihre Nachricht" required></textarea>
+      <button type="submit">Nachricht senden</button>
+    </form>
+    <div class="contact-details">
+      <p><strong>E-Mail:</strong> cybersec@digitalfortress.de</p>
+      <p><strong>Telefon:</strong> +49 123 456789</p>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer>
-    <p>© 2024 Web Development & Cyber Security Company</p>
+    <div class="footer-content">
+      <p>© 2024 Digital Fortress Solutions</p>
+      <div class="footer-links">
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="agb.html">AGB</a>
+      </div>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+    </div>
   </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
